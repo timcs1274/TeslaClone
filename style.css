@@ -3,9 +3,10 @@
 ::after {
   content: none;
 }
-
+* {
+    scroll-behavior: smooth;
+}
 .row>* {
-    flex-shrink: 0;
     width: 100%;
     max-width: 100%;
     padding-right: 0px;
@@ -13,25 +14,54 @@
     margin-top: 0px;
 }
 
-.row {
-    width: 100vh;
-    height: 100vh;
-    display:contents;
-    overflow: hidden;
-}
-
 .no-gutters {
     margin-right: 0;
     margin-left: 0;
     padding-right: 0;
     padding-left: 0;
-    
   }
+
+.row {
+    width: 100vh;
+    height: auto;
+    display:contents;
+    object-fit: cover;
+    overflow: hidden;
+    min-height: 0;
+}
 
 img {
     width: 100%;
     height: 100%;
     padding: 0px;
     box-sizing: inherit;
-    transform: scale(1);
+    overflow: hidden;
+    min-height: 0;
 }
+
+
+
+/* html,
+body {
+  height: 100%;
+  margin: 0;
+}
+main {
+    height: 100%;
+  }
+
+.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .row {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  } */
