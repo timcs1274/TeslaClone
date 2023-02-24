@@ -1,6 +1,18 @@
-/* * {
-    scroll-behavior: smooth;
-} */
+*,
+::before,
+::after {
+  content: none;
+}
+
+.row>* {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-top: 0px;
+}
+
 .no-gutters {
     margin-right: 0;
     margin-left: 0;
@@ -10,7 +22,7 @@
   }
 
 img {
-    width: 90vh;
+    width: 100vh;
     height: 100vh;
     padding: 0px;
     box-sizing: inherit;
